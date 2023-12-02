@@ -27,4 +27,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
