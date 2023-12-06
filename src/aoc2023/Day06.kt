@@ -26,9 +26,9 @@ fun main() {
         return finals.reduce { acc, i -> acc * i }
     }
 
-    fun List<String>.sumFilteredDigits(considerGaps: Boolean) = this.calculateTimesExceedingDistance()
+    fun List<String>.calculateTimesExceedingDistanceWithGaps(considerGaps: Boolean) = this.calculateTimesExceedingDistance()
 
-    fun part1(input: List<String>) = input.sumFilteredDigits(considerGaps = false)
+    fun part1(input: List<String>) = input.calculateTimesExceedingDistanceWithGaps(considerGaps = false)
 
 /*
     val testInput1 = readInput(name = "${day}_p1_test", year = year)
