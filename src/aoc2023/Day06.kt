@@ -26,19 +26,15 @@ fun main() {
         return finals.reduce { acc, i -> acc * i }
     }
 
-    fun List<String>.calculateTimesExceedingDistanceWithGaps(considerGaps: Boolean) = this.calculateTimesExceedingDistance()
+    fun List<String>.calculateTimesExceedingDistanceWithGaps() = this.calculateTimesExceedingDistance()
 
-    fun part1(input: List<String>) = input.calculateTimesExceedingDistanceWithGaps(considerGaps = false)
+    fun part1(input: List<String>) = input.calculateTimesExceedingDistanceWithGaps()
 
-/*
     val testInput1 = readInput(name = "${day}_p1_test", year = year)
-*/
     val testInput2 = readInput(name = "${day}_p2_test", year = year)
     val input = readInput(name = day, year = year)
 
-/*
     check(part1(testInput1) == 288)
-*/
     check(part1(testInput2) == 71503)
     println(part1(input))
 }
